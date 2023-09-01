@@ -1,0 +1,39 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditor",
+        "when": "neovim.mode != insert && editorTextFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "neovim.mode != insert && editorTextFocus"
+    },
+    {
+        "key": "j",
+        "args": "j",
+        "command": "vscode-neovim.compositeEscape1",
+        "when": "neovim.mode == insert && editorTextFocus"
+    }
+]
