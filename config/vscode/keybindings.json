@@ -14,8 +14,18 @@
         "command": "workbench.action.navigateLeft"
     },
     {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },    
+    {
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     },
     {
         "key": "f11",
