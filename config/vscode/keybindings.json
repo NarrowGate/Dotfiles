@@ -22,7 +22,7 @@
         "key": "ctrl+shift+h",
         "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
-    }
+    },
     {
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
@@ -36,7 +36,7 @@
         "key": "ctrl+shift+l",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
-    }
+    },
     {
         "key": "f11",
         "command": "workbench.action.toggleZenMode"
