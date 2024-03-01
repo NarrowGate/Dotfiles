@@ -1,1 +1,71 @@
+	"vim.normalModeKeyBindings": [
 
+		{
+			"before": ["<leader>", "f"],
+			"commands": ["workbench.action.toggleZenMode"],
+		},
+		{
+			"before": ["<leader>", "b"],
+			"commands": ["workbench.action.toggleSidebarVisibility"],
+		},
+ 		{
+			"before": [ "[", "b"],
+			"commands": ["workbench.action.previousEditor"],
+			"when": "editorTextFocus"
+		},
+		{
+			"before": ["]", "b"],
+			"commands": ["workbench.action.nextEditor"],
+			"when": "editorTextFocus"
+		},
+		{
+			"before": ["<leader>", "h"],
+			"commands": ["workbench.action.navigateLeft"],
+			"when": "editorTextFocus"
+		},
+		{
+			"before": ["<leader>", "j"],
+			"commands": ["workbench.action.navigateDown"],
+			"when": "editorTextFocus"
+		},
+		{
+			"before": ["<leader>", "l"],
+			"commands": ["workbench.action.navigateRight"],
+			"when": "editorTextFocus"
+		},
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.commentLine"],
+			"when": "editorTextFocus"
+		},
+		{
+			"before": ["<leader>", "k"],
+			"commands": ["workbench.action.openQuickChat.copilot"],
+			"when": "editorTextFocus"
+		},		
+		{
+			"before": ["<leader>", "|"],
+			"commands": ["workbench.action.splitEditorRight"],
+			"when": "editorTextFocus"
+		},
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.commentLine"],
+			"when": "editorTextFocus"
+		}
+	],
+	"vim.insertModeKeyBindings": [
+
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.commandLineModeKeyBindings": [
+
+	],
+	"vim.commandLineModeKeyBindingsNonRecursive": [
+		
+	],
