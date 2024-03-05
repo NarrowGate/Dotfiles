@@ -9,6 +9,11 @@
 			"commands": ["workbench.action.toggleSidebarVisibility"],
 		},
  		{
+			"before": [ "<leader>", "x"],
+			"commands": ["workbench.action.closeActiveEditor"],
+			"when": "editorTextFocus"
+		},		
+ 		{
 			"before": [ "[", "b"],
 			"commands": ["workbench.action.previousEditor"],
 			"when": "editorTextFocus"
