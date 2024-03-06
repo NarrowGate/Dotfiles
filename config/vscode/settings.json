@@ -1,18 +1,39 @@
+{
 	"vim.normalModeKeyBindings": [
 
 		{
-			"before": ["<leader>", "f"],
+			"before": ["<leader>", "z"],
 			"commands": ["workbench.action.toggleZenMode"],
 		},
 		{
-			"before": ["<leader>", "b"],
+			"before": ["<leader>", "s"],
 			"commands": ["workbench.action.toggleSidebarVisibility"],
+		},
+		{
+			"before": ["<leader>", "f"],
+			"after": ["<C-f>"],
+		},
+		{
+			"before": ["<leader>", "b"],
+			"after": ["<C-b>"],
+		},
+		{
+			"before": ["<leader>", "o"],
+			"after": ["<C-o>"],
+		},
+		{
+			"before": ["<leader>", "i"],
+			"after": ["<C-i>"],
+		},
+		{
+			"before": ["<leader>", "r"],
+			"after": ["<C-r>"],
 		},
  		{
 			"before": [ "<leader>", "x"],
 			"commands": ["workbench.action.closeActiveEditor"],
 			"when": "editorTextFocus"
-		},		
+		},
  		{
 			"before": [ "[", "b"],
 			"commands": ["workbench.action.previousEditor"],
@@ -73,4 +94,5 @@
 	],
 	"vim.commandLineModeKeyBindingsNonRecursive": [
 		
-	],
+	]
+}
