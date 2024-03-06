@@ -30,7 +30,7 @@
 			"after": ["<C-r>"],
 		},
  		{
-			"before": [ "<leader>", "x"],
+			"before": [ "<leader>", "q"],
 			"commands": ["workbench.action.closeActiveEditor"],
 			"when": "editorTextFocus"
 		},
