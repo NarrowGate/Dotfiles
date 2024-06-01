@@ -62,6 +62,11 @@
 
 //  Neovim vscode extension keybindings
 [
+    { // Move focus to the Editor, if currently in the SideBar
+        "key": "ctrl+0",
+        "when": "sideBarFocus",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
     {
         "key": "\\ f",
         "command": "workbench.action.toggleZenMode",
