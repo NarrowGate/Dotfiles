@@ -1,118 +1,87 @@
 // Place your key bindings in this file to override the defaults
-// [
-//     {
-//         "key": "ctrl+k",
-//         "command": "workbench.action.navigateUp"
-//     },
-//     {
-//         "key": "ctrl+j",
-//         "command": "workbench.action.navigateDown"
-//     },
-//     {
-//         "key": "ctrl+h",
-//         "command": "workbench.action.navigateLeft"
-//     },
-//     {
-//         "key": "ctrl+shift+k",
-//         "command": "workbench.action.terminal.focusPrevious",
-//         "when": "terminalFocus"
-//     },
-//     {
-//         "key": "ctrl+shift+h",
-//         "command": "workbench.action.terminal.focusPreviousPane",
-//         "when": "terminalFocus"
-//     },
-//     {
-//         "key": "ctrl+l",
-//         "command": "workbench.action.navigateRight"
-//     },
-//     {
-//         "key": "ctrl+shift+j",
-//         "command": "workbench.action.terminal.focusNext",
-//         "when": "terminalFocus"
-//     },
-//     {
-//         "key": "ctrl+shift+l",
-//         "command": "workbench.action.terminal.focusNextPane",
-//         "when": "terminalFocus"
-//     },
-//     {
-//         "key": "f11",
-//         "command": "workbench.action.toggleZenMode"
-//     },
-//     {
-//         "key": "tab",
-//         "command": "workbench.action.nextEditor",
-//         "when": "neovim.mode != insert && editorTextFocus"
-//     },
-//     {
-//         "key": "shift+tab",
-//         "command": "workbench.action.previousEditor",
-//         "when": "neovim.mode != insert && editorTextFocus"
-//     },
-//     {
-//         "key": "j",
-//         "args": "j",
-//         "command": "vscode-neovim.compositeEscape1",
-//         "when": "neovim.mode == insert && editorTextFocus"
-//     }
-// ]
-
-// Place your key bindings in this file to override the defaults
-
-//  Neovim vscode extension keybindings
 [
-    { // Move focus to the Editor, if currently in the SideBar
-        "key": "ctrl+0",
-        "when": "sideBarFocus",
-        "command": "workbench.action.focusActiveEditorGroup"
+    //     {
+    //         "key": "ctrl+k",
+    //         "command": "workbench.action.navigateUp"
+    //     },
+    //     {
+    //         "key": "ctrl+j",
+    //         "command": "workbench.action.navigateDown"
+    //     },
+    //     {
+    //         "key": "ctrl+h",
+    //         "command": "workbench.action.navigateLeft"
+    //     },
+    //     {
+    //         "key": "ctrl+shift+k",
+    //         "command": "workbench.action.terminal.focusPrevious",
+    //         "when": "terminalFocus"
+    //     },
+    //     {
+    //         "key": "ctrl+shift+h",
+    //         "command": "workbench.action.terminal.focusPreviousPane",
+    //         "when": "terminalFocus"
+    //     },
+    //     {
+    //         "key": "ctrl+l",
+    //         "command": "workbench.action.navigateRight"
+    //     },
+    //     {
+    //         "key": "ctrl+shift+j",
+    //         "command": "workbench.action.terminal.focusNext",
+    //         "when": "terminalFocus"
+    //     },
+    //     {
+    //         "key": "ctrl+shift+l",
+    //         "command": "workbench.action.terminal.focusNextPane",
+    //         "when": "terminalFocus"
+    //     },
+    {
+        "key": "ctrl+shift+G b",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "\\ f",
-        "command": "workbench.action.toggleZenMode",
-        "when": "neovim.mode == normal"
+        "key": "ctrl+shift+G e",
+        "command": "workbench.view.explorer"
     },
-
     {
-        "key": "\\ h",
-        "command": "workbench.action.navigateLeft",
-        "when": "neovim.mode == normal && editorTextFocus && !terminalFocus"
+        "key": "ctrl+shift+G s",
+        "command": "workbench.view.scm"
     },
-
     {
-        "key": "\\ j",
-        "command": "workbench.action.navigateDown",
-        "when": "neovim.mode == normal && editorTextFocus && !terminalFocus"
+        "key": "ctrl+shift+G x",
+        "command": "workbench.view.extensions"
     },
-
     {
-        "key": "\\ k",
-        "command": "workbench.action.navigateUp",
-        "when": "neovim.mode == normal && editorTextFocus && !terminalFocus"
+        "key": "ctrl+shift+G f",
+        "command": "workbench.view.search"
     },
-
     {
-        "key": "\\ l",
-        "command": "workbench.action.navigateRight",
-        "when": "neovim.mode == normal && editorTextFocus && !terminalFocus"
+        "key": "ctrl+shift+G z",
+        "command": "workbench.action.toggleZenMode"
     },
-
     {
-        "key": "[ b",
-        "command": "workbench.action.previousEditor",
-        "when": "neovim.mode != insert && editorTextFocus"
+        "key": "ctrl+shift+G 0",
+        "command": "workbench.action.focusFirstEditorGroup"
     },
-
     {
-        "key": "] b",
-        "command": "workbench.action.nextEditor",
-        "when": "neovim.mode != insert && editorTextFocus"
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus"
     },
-
     {
-        "key": "j",
-        "args": "j",
-        "command": "vscode-neovim.compositeEscape1",
-        "when": "neovim.mode == insert && editorTextFocus"
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl-\\",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorFocus"
     }
 ]
