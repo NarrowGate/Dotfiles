@@ -80,8 +80,17 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl-\\",
+        "key": "ctrl+\\",
         "command": "workbench.action.splitEditorRight",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.action.openQuickChat.copilot"
+        // "command": "workbench.panel.chat.view.copilot.focus"
     }
 ]
