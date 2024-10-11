@@ -55,6 +55,14 @@
             "commands": ["workbench.action.closeEditorsInGroup"]
           },
           {
+            "before": ["<leader>", "g", "<Left>"],
+            "commands": ["workbench.action.moveEditorToPreviousGroup"]
+          },
+          {
+            "before": ["<leader>", "g", "<Right>"],
+            "commands": ["workbench.action.moveEditorToNextGroup"]
+          },
+          {
             "before": ["<leader>", "f"],
             "after": ["<C-f>"]
           },
