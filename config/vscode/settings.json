@@ -4,7 +4,7 @@
         "<C-w>": false
     },
     "vim.normalModeKeyBindings": [
-          {
+        {
             "before": ["<leader>", "z"],
             "commands": ["workbench.action.toggleZenMode"]
           },
@@ -31,11 +31,79 @@
           {
             "before": ["<leader>", "s", "g"],
             "commands": ["workbench.panel.chat.view.copilot.focus"]
+          },
+          {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.files.openFolder"]
+          },
+          {
+            "before": ["<leader>", "f", "o"],
+            "commands": ["workbench.action.files.openFile"]
+          },
+          {
+            "before": ["<leader>", "c", "f"],
+            "commands": ["editor.fold"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "c", "u"],
+            "commands": ["editor.unfold"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "g", "w"],
+            "commands": ["workbench.action.closeEditorsInGroup"]
+          },
+          {
+            "before": ["<leader>", "f"],
+            "after": ["<C-f>"]
+          },
+          {
+            "before": ["<leader>", "b"],
+            "after": ["<C-b>"]
+          },
+          {
+            "before": ["<leader>", "i"],
+            "after": ["<C-i>"]
+          },
+          {
+            "before": ["<leader>", "r"],
+            "after": ["<C-r>"]
+          },
+          {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.closeActiveEditor"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.navigateLeft"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "j"],
+            "commands": ["workbench.action.navigateDown"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "l"],
+            "commands": ["workbench.action.navigateRight"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "/"],
+            "commands": ["editor.action.commentLine"],
+            "when": "editorTextFocus"
+          },
+          {
+            "before": ["<leader>", "\\"],
+            "commands": ["workbench.action.splitEditorRight"],
+            "when": "editorTextFocus"
           }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": ["<leader>", "c"],
+            "before": ["<leader>", "/"],
             "commands": ["editor.action.commentLine"],
             "when": "editorTextFocus"
         }
