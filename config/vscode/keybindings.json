@@ -6,6 +6,11 @@
         "when": "editorFocus"
     },
     {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
         "key": "ctrl+p",
         "command": "workbench.action.quickOpen",
         "when": "editorFocus"
@@ -19,6 +24,11 @@
         "key": "ctrl+\\",
         "command": "workbench.action.splitEditorRight",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+shift+p",
