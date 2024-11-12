@@ -53,11 +53,11 @@
         },
         {
             "before": ["<leader>", "r", "o"],
-            "commands": ["remote-containers.rebuildNoCacheAndReopenInContainer"]
+            "commands": ["remote-containers.rebuildAndReopenInContainer"]
         },
         {
-            "before": ["<leader>", "r", "w"],
-            "commands": ["workbench.action.remote.close"]
+            "before": ["<leader>", "r", "r"],
+            "commands": ["remote-containers.reopenInContainer"]
         },
         // Sidebar 
         {
