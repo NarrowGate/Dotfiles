@@ -8,6 +8,11 @@
             "before": ["<leader>", "z"],
             "commands": ["workbench.action.toggleZenMode"]
         },
+        {
+            "before": ["x"],
+            "commands": ["workbench.action.closeActiveEditor"],
+            "when": "editorTextFocus"
+        },
         // Code
         {
             "before": ["<leader>", "c", "f"],
