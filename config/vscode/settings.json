@@ -13,6 +13,16 @@
             "commands": ["workbench.action.closeActiveEditor"],
             "when": "editorTextFocus"
         },
+        {
+            "before": ["J"],
+            "commands": ["workbench.action.previousEditor"],
+            "when": "editorTextFocus"
+        },
+        {
+            "before": ["K"],
+            "commands": ["workbench.action.nextEditor"],
+            "when": "editorTextFocus"
+        },
         // Code
         {
             "before": ["<leader>", "c", "f"],
