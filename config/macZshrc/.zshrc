@@ -15,6 +15,8 @@ alias repos='cd /Users/melvinwilson/Documents/repos'
 alias shutdownnow='sudo shutdown -h now'
 alias restartnow= 'sudo shutdown -r now'
 alias sourceZshrc='source /Users/melvinwilson/.zshrc'
+
+# Update Configs
 alias updateZshrc='cp /Users/melvinwilson/Documents/repos/Dotfiles/config/macZshrc/.zshrc /Users/melvinwilson/.zshrc'
 
 
