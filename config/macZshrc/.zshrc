@@ -10,8 +10,8 @@ alias ls='ls -lAFh'
 # Add locations to Path Variables
 # Write handy functions
 # Use ZSH plugins
-alias Mdrive='cd /Users/melvinwilson/Documents/OneDrive/Mdrive'
-alias myCode='cd /Users/melvinwilson/Documents/OneDrive/Mdrive/MW/homeCode'
+alias Mdrive='[[ -d "/Users/melvinwilson/Documents/OneDrive" ]] && cd /Users/melvinwilson/Documents/OneDrive/Mdrive || cd Library/CloudStorage/OneDrive-Personal/Mdrive'
+alias myCode='[[ -d "/Users/melvinwilson/Documents/OneDrive" ]] && cd /Users/melvinwilson/Documents/OneDrive/Mdrive/MW/homeCode || cd Library/CloudStorage/OneDrive-Personal/Mdrive/MW/homeCode'
 alias repos='cd /Users/melvinwilson/Documents/repos'
 
 alias shutdownnow='sudo shutdown -h now'
