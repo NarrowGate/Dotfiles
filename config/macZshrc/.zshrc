@@ -1,5 +1,5 @@
 # Set Variables
-
+# Set for folder paths
 
 # Change zsh options
 
