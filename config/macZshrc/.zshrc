@@ -20,7 +20,7 @@ alias sourceZshrc='source /Users/melvinwilson/.zshrc'
 alias copyZshrcFromLocal='cp /Users/melvinwilson/Documents/repos/Dotfiles/config/macZshrc/.zshrc /Users/melvinwilson/.zshrc'
 
 # Pull Zshrc
-alias pullZshrc='cd /Users/melvinwilson/Documents/repos/Dotfiles && git pull'
+alias pullZshrc='cd /Users/melvinwilson/Documents/repos/Dotfiles && git pull origin main'
 
 
 # Application aliases
