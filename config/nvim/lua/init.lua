@@ -19,13 +19,39 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local prettierSetup = {
+        "jose-elias-alvarez/null-ls.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        config = function()
+            local null_ls = require("null-ls")
+            null_ls.setup({
+                sources = {
+                    null_ls.builtins.formatting.prettier.with({
+                        extra_args = { "--single-quote", "--jsx-single-quote" },
+                    }),
+                },
+                on_attach = function(client, bufnr)
+                    if client.server_capabilities.documentFormattingProvider then
+                        vim.api.nvim_create_autocmd("BufWritePre", {
+                            buffer = bufnr,
+                            callback = function()
+                                vim.lsp.buf.format({ async = false })
+                            end,
+                        })
+                    end
+                end,
+            })
+        end,
+    }
+
 local plugins = {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  {"nvim-treesitter/nvim-treesitter", build= ":TSUpdate"}
+  {"nvim-treesitter/nvim-treesitter", build= ":TSUpdate"},
+  prettierSetup
 }
 local opts = {}
 
