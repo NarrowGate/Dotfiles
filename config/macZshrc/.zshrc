@@ -43,3 +43,17 @@ alias chromeVinu='open -na "Google Chrome" --args --profile-directory="Profile 2
 # Write handy functions
 
 # Use ZSH plugins
+#
+alias yelp='
+echo "============================================" &&
+echo "copyZshrcFromLocal: ---" &&
+echo "sourceZshrc: ---" &&
+echo "copyNvimFromLocal: ---" &&
+echo "sourceNvim: ---" &&
+echo "myCode: Path to Mdrive/" &&
+echo "Mdrive: Path to Mdrive/MW/homeCode" &&
+echo "chromeVinu: chromeMelvin & chromeReshma" &&
+echo "pullDotfiles: Git pull origin main of the Dotfiles Repo" 
+echo "============================================"
+'
+
