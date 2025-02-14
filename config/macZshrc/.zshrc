@@ -12,9 +12,10 @@ CLOUD_STORAGE_ONEDRIVE_PATH="$HOME/Library/CloudStorage/OneDrive-Personal"
 # Create Aliases
 alias ls='ls -lAFh'
 # Path aliases
-alias Mdrive='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive || $CLOUD_STORAGE_ONEDRIVE_PATH/Mdrive'
+alias myDrive='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive || $CLOUD_STORAGE_ONEDRIVE_PATH/Mdrive'
 alias myCode='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/homeCode || $CLOUD_STORAGE_ONEDRIVE_PATH/Mdrive/MW/homeCode'
-alias repos='cd $USER_DOCUMENT/repos'
+alias myText='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/txt_js || $CLOUD_STORAGE_ONEDRIVE_PATH/Mdrive/MW/txt_js'
+alias myRepos='cd $USER_DOCUMENT/repos'
 
 # Function aliases
 alias shutdownnow='sudo shutdown -h now'
@@ -34,7 +35,7 @@ alias pullDotfiles='cd $USER_DOCUMENT/repos/Dotfiles && git pull origin main'
 # Application aliases
 alias chromeMelvin='open -na "Google Chrome" --args --profile-directory="Default"'
 alias chromeReshma='open -na "Google Chrome" --args --profile-directory="Profile 1"'
-alias chromeVinu='open -na "Google Chrome" --args --profile-directory="Profile 2"'
+alias myChrome='open -na "Google Chrome" --args --profile-directory="Profile 2"'
 
 # Customize Prompts
 
@@ -50,10 +51,11 @@ echo "copyZshrcFromLocal: ---" &&
 echo "sourceZshrc: ---" &&
 echo "copyNvimFromLocal: ---" &&
 echo "sourceNvim: ---" &&
-echo "myCode: Path to Mdrive/" &&
-echo "Mdrive: Path to Mdrive/MW/homeCode" &&
-echo "chromeVinu: chromeMelvin & chromeReshma" &&
+echo "myDrive: Path to Mdrive/" &&
+echo "myText: Path to Mdrive/MW/txt_js" &&
+echo "myCode: Path to Mdrive/MW/homeCode" &&
+echo "myRepos: Path to Documents/repos" &&
+echo "myChrome: chromeMelvin & chromeReshma" &&
 echo "pullDotfiles: Git pull origin main of the Dotfiles Repo" 
 echo "============================================"
 '
-
