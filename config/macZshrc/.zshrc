@@ -13,10 +13,21 @@ CLOUD_STORAGE_ONEDRIVE_PATH="$HOME/Library/CloudStorage/OneDrive-Personal"
 # Create Aliases
 alias ls='ls -lAFh'
 # Path aliases
-alias myDrive='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive || $ONEDRIVE_PATH_1/Mdrive'
+# alias myDrive='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive || $ONEDRIVE_PATH_1/Mdrive'
 alias myCode='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/homeCode || $ONEDRIVE_PATH_1/Mdrive/MW/homeCode'
 alias myText='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/txt_js || $ONEDRIVE_PATH_1/Mdrive/MW/txt_js'
 alias myRepos='cd $USER_DOCUMENT/repos'
+
+# Functions
+myDrive() {
+    if [[ -d "$ONEDRIVE_PATH/Mdrive" ]]; then
+        cd "$ONEDRIVE_PATH/Mdrive" || return
+    elif [[ -d "$ONEDRIVE_PATH_1/Mdrive" ]]; then
+        cd "$ONEDRIVE_PATH_1/Mdrive" || return
+    else
+        echo "❌ Error: Neither '$ONEDRIVE_PATH/Mdrive' nor '$ONEDRIVE_PATH_1/Mdrive' exist."
+    fi
+}
 
 # Function aliases
 alias shutdownnow='sudo shutdown -h now'
