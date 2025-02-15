@@ -6,6 +6,11 @@ USER_DOCUMENT="$USER_HOME/Documents"
 ONEDRIVE_PATH="$USER_DOCUMENT/OneDrive"
 ONEDRIVE_PATH_1="$HOME/OneDrive"
 
+MY_DRIVE_PATH="Mdrive"
+MY_CODE_PATH="/Mdrive/MW/homeCode"
+MY_TEXT_PATH="/Mdrive/MW/txt_js"
+MY_MUSIC_PATH="Mdrive/MW/_music"
+
 # Change zsh options
 
 
@@ -14,7 +19,6 @@ alias ls='ls -lAFh'
 
 # Functions
 ## Path alias functions
-# General function to check multiple paths and navigate
 goToPath() {
     local path1="$1"
     local path2="$2"
@@ -28,24 +32,24 @@ goToPath() {
     fi
 }
 
-# myDrive function using goToPath
 myDrive() {
-    goToPath "$ONEDRIVE_PATH/Mdrive" "$ONEDRIVE_PATH_1/Mdrive"
+    goToPath "$ONEDRIVE_PATH/$MY_DRIVE_PATH" "$ONEDRIVE_PATH_1/$MY_DRIVE_PATH"
 }
 
-# myCode function using goToPath
 myCode() {
-    goToPath "$ONEDRIVE_PATH/Mdrive/MW/homeCode" "$ONEDRIVE_PATH_1/Mdrive/MW/homeCode"
+    goToPath "$ONEDRIVE_PATH/$MY_CODE_PATH" "$ONEDRIVE_PATH_1/$MY_CODE_PATH"
 }
 
-# myText function using goToPath
 myText() {
-    goToPath "$ONEDRIVE_PATH/Mdrive/MW/txt_js" "$ONEDRIVE_PATH_1/Mdrive/MW/txt_js"
+    goToPath "$ONEDRIVE_PATH/$MY_TEXT_PATH" "$ONEDRIVE_PATH_1/$MY_TEXT_PATH"
 }
 
-# myRepos function using goToPath
 myRepos() {
     goToPath "$USER_DOCUMENT/repos"
+}
+
+myMusic() {
+    goToPath "$ONEDRIVE_PATH/$MY_MUSIC_PATH" "$ONEDRIVE_PATH_1/$MY_MUSIC_PATH"
 }
 
 # Function aliases
