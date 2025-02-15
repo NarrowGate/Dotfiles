@@ -5,20 +5,15 @@ USER_HOME="/Users/melvinwilson"
 USER_DOCUMENT="$USER_HOME/Documents"
 ONEDRIVE_PATH="$USER_DOCUMENT/OneDrive"
 ONEDRIVE_PATH_1="$HOME/OneDrive"
-CLOUD_STORAGE_ONEDRIVE_PATH="$HOME/Library/CloudStorage/OneDrive-Personal"
 
 # Change zsh options
 
 
 # Create Aliases
 alias ls='ls -lAFh'
-# Path aliases
-# alias myDrive='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive || $ONEDRIVE_PATH_1/Mdrive'
-alias myCode='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/homeCode || $ONEDRIVE_PATH_1/Mdrive/MW/homeCode'
-alias myText='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/txt_js || $ONEDRIVE_PATH_1/Mdrive/MW/txt_js'
-alias myRepos='cd $USER_DOCUMENT/repos'
 
 # Functions
+## Path alias functions
 # General function to check multiple paths and navigate
 goToPath() {
     local path1="$1"
@@ -41,6 +36,16 @@ myDrive() {
 # myCode function using goToPath
 myCode() {
     goToPath "$ONEDRIVE_PATH/Mdrive/MW/homeCode" "$ONEDRIVE_PATH_1/Mdrive/MW/homeCode"
+}
+
+# myText function using goToPath
+myText() {
+    goToPath "$ONEDRIVE_PATH/Mdrive/MW/txt_js" "$ONEDRIVE_PATH_1/Mdrive/MW/txt_js"
+}
+
+# myRepos function using goToPath
+myRepos() {
+    goToPath "$USER_DOCUMENT/repos"
 }
 
 # Function aliases
