@@ -19,14 +19,28 @@ alias myText='[[ -d "$ONEDRIVE_PATH" ]] && cd /$ONEDRIVE_PATH/Mdrive/MW/txt_js |
 alias myRepos='cd $USER_DOCUMENT/repos'
 
 # Functions
-myDrive() {
-    if [[ -d "$ONEDRIVE_PATH/Mdrive" ]]; then
-        cd "$ONEDRIVE_PATH/Mdrive" || return
-    elif [[ -d "$ONEDRIVE_PATH_1/Mdrive" ]]; then
-        cd "$ONEDRIVE_PATH_1/Mdrive" || return
+# General function to check multiple paths and navigate
+goToPath() {
+    local path1="$1"
+    local path2="$2"
+
+    if [[ -d "$path1" ]]; then
+        cd "$path1" || return
+    elif [[ -d "$path2" ]]; then
+        cd "$path2" || return
     else
-        echo "❌ Error: Neither '$ONEDRIVE_PATH/Mdrive' nor '$ONEDRIVE_PATH_1/Mdrive' exist."
+        echo "❌ Error: Neither '$path1' nor '$path2' exist."
     fi
+}
+
+# myDrive function using goToPath
+myDrive() {
+    goToPath "$ONEDRIVE_PATH/Mdrive" "$ONEDRIVE_PATH_1/Mdrive"
+}
+
+# myCode function using goToPath
+myCode() {
+    goToPath "$ONEDRIVE_PATH/Mdrive/MW/homeCode" "$ONEDRIVE_PATH_1/Mdrive/MW/homeCode"
 }
 
 # Function aliases
