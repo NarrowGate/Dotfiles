@@ -9,6 +9,8 @@ vim.cmd("set scrolloff=5")
 vim.cmd("set lbr")
 vim.cmd("set ai")
 vim.cmd("set si")
+vim.cmd("set ignorecase")
+vim.cmd("set smartcase")
 
 vim.keymap.set('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = true })
