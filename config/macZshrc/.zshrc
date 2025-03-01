@@ -94,3 +94,29 @@ echo "myChrome: chromeMelvin & chromeReshma" &&
 echo "pullDotfiles: Git pull origin main of the Dotfiles Repo" 
 echo "============================================"
 '
+alias yelpNvim='
+echo "============================================" &&
+echo "Navigation" &&
+echo "Ex: For file explorer (Netrw)" &&
+echo "e: To edit file" &&
+echo "============================================"
+echo "Buffers" &&
+echo "ls: List all buffers, bn: next, bp: previous, bd: delete (close a file) " &&
+echo ":b1 or :b ant-text.txt or :b and tab or :b ctrl+d", :bf for first buffer, :bl for last buffer, ctrl + ^ to switch to previously opened buffer and between &&
+echo ":ba to open all buffers in different windows" &&
+echo "ctrl + g to display file name" &&
+echo ":wq to save and close" &&
+echo "============================================"
+echo "Close (in Window) :q (or ctrl + w and q) :q! :qall!" &&
+echo "Close all windows except the current one ctrl + w and o or :on" &&
+echo "============================================"
+echo "Windows" &&
+echo "ctrl + w and w to switch windows" &&
+echo ":sp to split horizontal :sp file-name to open a different file-name ctrl + w and s" &&
+echo ":vs to split vertical :vs file-name to open a different file-name ctrl + w and v" &&
+echo "ctrl + w h,j,k and l to navigate windows" &&
+echo "============================================"
+echo "Help :h :buffers" &&
+echo ":helpclose Close Help" &&
+echo "============================================"
+'
