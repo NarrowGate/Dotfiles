@@ -92,6 +92,8 @@ echo "myCode: Path to Mdrive/MW/homeCode" &&
 echo "myRepos: Path to Documents/repos" &&
 echo "myChrome: chromeMelvin & chromeReshma" &&
 echo "pullDotfiles: Git pull origin main of the Dotfiles Repo" 
+echo "yelp: Help" &&
+echo "yelpNvim: Help" &&
 echo "============================================"
 '
 alias yelpNvim='
