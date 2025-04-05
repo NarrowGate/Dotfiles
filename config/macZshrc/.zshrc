@@ -103,8 +103,12 @@ echo "Ex: For file explorer (Netrw)" &&
 echo "e: To edit file" &&
 echo "CREATE A NEW FILE" &&
 echo "e: To edit file & :w to save" &&
+echo "CREATE A NEW FOLDER" &&
+echo ":!mkdir -p newdir " &&
 echo "DELETE A FILE" &&
 echo ":!rm % To delete file current buffer or give a name of the file instead of % to delete that file" &&
+echo "DELETE A FOLDER" &&
+echo ":!rm -r folder_name" &&
 echo "BUFFERS" &&
 echo "ls: List all buffers, bn: next, bp: previous, bd: delete (close a file) " &&
 echo ":b1 or :b ant-text.txt or :b and tab or :b ctrl+d", :bf for first buffer, :bl for last buffer, ctrl + ^ to switch to previously opened buffer and between &&
