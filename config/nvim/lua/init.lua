@@ -64,7 +64,8 @@ local plugins = {
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
   {"nvim-treesitter/nvim-treesitter", build= ":TSUpdate"},
-  prettierSetup
+  prettierSetup,
+  { "easymotion/vim-easymotion" } 
 }
 local opts = {}
 
