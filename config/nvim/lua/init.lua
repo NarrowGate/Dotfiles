@@ -18,6 +18,9 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { noremap = true, silent = true })
 vim.keymap.set('n', 'x', ':bd<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-\\>', ':vs<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'f', '<Plug>(easymotion-f)', { noremap = true, silent = true })
+vim.keymap.set('n', 'F', '<Plug>(easymotion-F)', { noremap = true, silent = true })
+
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
