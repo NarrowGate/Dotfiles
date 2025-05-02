@@ -46,7 +46,7 @@
         // Github Copilot
         {
             "before": ["<leader>", "q", "o"],
-            "commands": ["workbench.action.quickchat.toggle"],
+            "commands": ["workbench.action.quickchat.toggle"]
         },
         // Group
         {
@@ -74,7 +74,7 @@
             "before": ["<leader>", "r", "r"],
             "commands": ["remote-containers.reopenInContainer"]
         },
-        // Sidebar 
+        // Sidebar
         {
             "before": ["<leader>", "s", "e"],
             "commands": ["workbench.view.explorer"]
@@ -97,10 +97,27 @@
         },
         {
             "before": ["<leader>", "s", "x"],
-     		"commands": ["workbench.view.extensions"]
+            "commands": ["workbench.view.extensions"]
+        },
+        {
+            "before": ["f"],
+            "after": ["<leader>", "<leader>", "f"]
+        },
+        {
+            "before": ["F"],
+            "after": ["<leader>", "<leader>", "F"]
         }
     ],
-    "vim.visualModeKeyBindings": [],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["f"],
+            "after": ["<leader>", "<leader>", "f"]
+        },
+        {
+            "before": ["F"],
+            "after": ["<leader>", "<leader>", "F"]
+        }
+    ],
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
