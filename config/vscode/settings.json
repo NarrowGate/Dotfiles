@@ -125,5 +125,9 @@
         }
     ],
     "vim.commandLineModeKeyBindings": [],
-    "vim.commandLineModeKeyBindingsNonRecursive": []
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "editor.cursorSurroundingLines": "5",
+    "vim.easymotion": true,
+    "vim.statusBarColors.easymotionmode": "",
+    "vim.easymotionKeys": "asdfghjklqwertyuiop"
 }

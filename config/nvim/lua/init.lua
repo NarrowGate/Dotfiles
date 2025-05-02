@@ -1,4 +1,7 @@
 vim.g.mapleader=" "
+-- Set the characters for EasyMotion
+--vim.g.easymotion_smartcase = 1             -- Enable smart case sensitivity
+vim.g.easymotion_keys = 'asdfghjklqwertyuiop'        -- Specify the characters to use
 vim.opt.number=true
 vim.opt.relativenumber=true
 vim.cmd("set expandtab")
