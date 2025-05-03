@@ -129,5 +129,6 @@
     "editor.cursorSurroundingLines": "5",
     "vim.easymotion": true,
     "vim.statusBarColors.easymotionmode": "",
-    "vim.easymotionKeys": "asdfghjklqwertyuiop"
+    "vim.easymotionKeys": "asdfghjklqwertyuiop",
+    "vim.useSystemClipboard": true
 }
