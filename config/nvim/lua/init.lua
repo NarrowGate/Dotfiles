@@ -24,6 +24,10 @@ vim.keymap.set('n', 'x', ':bd<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-\\>', ':vs<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'f', '<Plug>(easymotion-f)', { noremap = true, silent = true })
 vim.keymap.set('n', 'F', '<Plug>(easymotion-F)', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>w', '<Plug>CamelCaseMotion_w', { noremap = false, silent = true })
+vim.keymap.set('n', '<leader>b', '<Plug>CamelCaseMotion_b', { noremap = false, silent = true })
+vim.keymap.set('n', '<leader>e', '<Plug>CamelCaseMotion_e', { noremap = false, silent = true })
+
 
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -72,7 +76,9 @@ local plugins = {
   },
   {"nvim-treesitter/nvim-treesitter", build= ":TSUpdate"},
   prettierSetup,
-  { "easymotion/vim-easymotion" } 
+  { "easymotion/vim-easymotion" } ,
+  { "bkad/CamelCaseMotion" } -- CamelCaseMotion plugin
+
 }
 local opts = {}
 
