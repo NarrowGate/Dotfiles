@@ -127,8 +127,93 @@
     "vim.commandLineModeKeyBindings": [],
     "vim.commandLineModeKeyBindingsNonRecursive": [],
     "editor.cursorSurroundingLines": "5",
-    "vim.easymotion": true,
     "vim.statusBarColors.easymotionmode": "",
+    "vim.easymotion": true,
     "vim.easymotionKeys": "asdfghjklqwertyuiop",
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "vim.camelCaseMotion.enable": true
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+
+	"search.exclude": {
+		"**/node_modules": false,
+		"**/compiled_frontend": true,
+	},
+	
+	"editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairsHorizontal": true,
+	
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
+    "editor.formatOnSave": true,    
+    "editor.fontFamily": "Fira Code Light, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.lineNumbers": "relative",
+    "editor.wordWrap": "on",
+    "editor.maxTokenizationLineLength": 2000000,	
+    "editor.inlineSuggest.enabled": true,
+	
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+
+	"prettier.requireConfig": true,
+	"prettier.useTabs": true,
+    "prettier.withNodeModules": true,
+
+	
+	"explorer.autoRevealExclude": {
+		"**/node_modules": false
+	},
+    "zenMode.hideLineNumbers": false,
+	"zenMode.hideStatusBar": false,
+	
+	"github.copilot.enable": {
+		"vue": true,
+		"javascript": true,
+		"typescript": true,
+		"css": true,
+		"scss": true,
+	},
+	"github.copilot.advanced": {
+        "*": true,
+        "typescript": true,
+		"javascript": true,
+		"vue": true,
+		"css": true,
+		"scss": true
+	
+	},
+	"settingsSync.ignoredExtensions": [],
+	"editor.stickyScroll.maxLineCount": 1,
+	"editor.stickyScroll.scrollWithEditor": false,
+	"vim.leader": " ",
+	"github.copilot.editor.enableAutoCompletions": true,
+	"editor.accessibilitySupport": "off",
+	"window.zoomLevel": 0.75,
+	"terminal.integrated.profiles.linux": {
+		"bash": {
+			"path": "bash",
+			"icon": "terminal-bash"
+		},
+		"zsh": {
+			"path": "zsh"
+		},
+		"fish": {
+			"path": "fish"
+		},
+		"tmux": {
+			"path": "tmux",
+			"icon": "terminal-tmux"
+		},
+		"pwsh": {
+			"path": "pwsh",
+			"icon": "terminal-powershell"
+		},
+		"ash": {
+			"path": "/bin/ash"
+		}
+	},
+	"terminal.integrated.defaultProfile.linux": "ash",
 }
