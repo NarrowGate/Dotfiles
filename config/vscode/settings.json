@@ -220,4 +220,9 @@
 		}
 	},
 	"terminal.integrated.defaultProfile.linux": "ash",
+	"editor.formatOnType": true,
+    "eslint.rules.customizations": [
+        { "rule": "*", "severity": "warn" }
+    ]
 }
+
