@@ -223,6 +223,10 @@
 	"editor.formatOnType": true,
     "eslint.rules.customizations": [
         { "rule": "*", "severity": "warn" }
-    ]
+    ],
+	"emmet.includeLanguages": {
+        "vue": "html"
+    },
 }
+
 
