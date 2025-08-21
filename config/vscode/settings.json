@@ -228,8 +228,27 @@
         "vue": "html"
     },
 	"css.enabledLanguages": ["html"], // Css intellisense in Html Extension
-    "editor.suggest.snippetsPreventQuickSuggestions": true
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+	    "editor.tokenColorCustomizations": {
+        "[Ayu Mirage]": {
+        "textMateRules": [
+            {
+            "scope": [
+                "keyword",
+                "storage",
+                "comment",
+                "variable.language",
+                "entity.name.method.js"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+            }
+        ]
+        }
+    }
 }
+
 
 
 
