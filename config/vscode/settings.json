@@ -227,6 +227,9 @@
 	"emmet.includeLanguages": {
         "vue": "html"
     },
+	"css.enabledLanguages": ["html"], // Css intellisense in Html Extension
+    "editor.suggest.snippetsPreventQuickSuggestions": true
 }
+
 
 
