@@ -229,25 +229,25 @@
     },
 	"css.enabledLanguages": ["html"], // Css intellisense in Html Extension
     "editor.suggest.snippetsPreventQuickSuggestions": true,
-	    "editor.tokenColorCustomizations": {
+    "editor.tokenColorCustomizations": {
         "[Ayu Mirage]": {
-        "textMateRules": [
-            {
-            "scope": [
-                "keyword",
-                "storage",
-                "comment",
-                "variable.language",
-                "entity.name.method.js",
-				"entity.other.attribute-name.html"
-            ],
-            "settings": {
-                "fontStyle": "italic"
-            }
-            }
-        ]
+            "textMateRules": [
+                {
+                    "scope": [
+                        "keyword",
+                        "storage",
+                        "comment",
+                        "variable.language",
+                        "entity.name.method.js",
+                        "entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
         }
-    }
+}
 }
 
 
