@@ -17,6 +17,8 @@
         "LudoLoops.ayuTokyo",
         "GrayJack.monokai-grayjack"
         //html
-        "ecmel.vscode-html-css"
+        "ecmel.vscode-html-css",
+        "formulahendry.auto-complete-tag",
+        "steoates.autoimport"
     ]
 }
