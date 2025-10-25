@@ -12,6 +12,8 @@ MY_TEXT_PATH="/Mdrive/MW/txt_js"
 MY_MUSIC_PATH="Mdrive/MW/_music"
 
 # Change zsh options
+# Enable vi mode
+bindkey -v
 
 
 # Create Aliases
