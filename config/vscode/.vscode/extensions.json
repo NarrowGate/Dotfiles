@@ -20,5 +20,8 @@
         "ecmel.vscode-html-css",
         "formulahendry.auto-complete-tag",
         "steoates.autoimport"
+        // json
+        "joshuapoehls.json-escaper",
+        "mohsen1.prettify-json"
     ]
 }
